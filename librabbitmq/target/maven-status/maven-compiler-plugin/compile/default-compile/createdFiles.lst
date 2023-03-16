@@ -1,0 +1,7 @@
+dto\ClienteDto.class
+dto\ItemVendaDto.class
+dto\VendaDto.class
+dto\SyncDto.class
+dto\ProdutoDto.class
+dto\EstoqueDto.class
+constants\TipoMovimentacaoEstoque.class

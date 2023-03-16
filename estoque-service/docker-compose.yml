@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: estoque
+    ports:
+      - "5435:5432" # expondo a porta 5434 para acesso externo
+    volumes:
+      - ./src/main/resources/scripts:/docker-entrypoint-initdb.d # diretório com os arquivos SQL
+
