@@ -1,4 +1,4 @@
-package br.com.clienteservice.adapters.inbound.consumer;
+package br.com.clienteservice.adapters.inbound;
 
 import br.com.clienteservice.adapters.inbound.mapper.Mapper;
 import br.com.clienteservice.adapters.inbound.request.ClienteRequest;
