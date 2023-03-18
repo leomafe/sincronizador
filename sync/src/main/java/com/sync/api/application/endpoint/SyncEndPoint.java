@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
+import java.net.URI;
 
 @Component
 @Path("/sincronizar")
@@ -19,7 +20,7 @@ public class SyncEndPoint {
     @POST
     public Response sincronizar(SyncDto dto) {
         service.enviar(dto);
-        return  Response.ok("Dados sincronizados com sucesso").build();
+        return  Response.created(URI.create("/sincronizar")).build();
     }
 
 
