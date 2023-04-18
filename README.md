@@ -2,6 +2,5 @@ Projeto final da disciplina  JavaEE da pós graduação em arquitetura de softwa
 - Rodar docker-compose de todos os micro-services.
 
 
-Considerações:
-Uma melhoria para resolver a questão do bancos de dados (quantidade de requisições indeterminadas), seria usar um banco NoSQL;
-- Outra melhoria possível seruia usar um gerenciador de containers.
+* Nessa branch foi alterado a persistência para um banco de dados NoSql (Mongodb)
+
