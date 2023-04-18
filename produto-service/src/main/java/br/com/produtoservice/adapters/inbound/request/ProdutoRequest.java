@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @Setter
 public class ProdutoRequest implements Serializable {
 
-    private Long id;
+    private String id;
 
     private String nome;
 

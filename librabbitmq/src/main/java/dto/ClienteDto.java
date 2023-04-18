@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Setter
 public class ClienteDto implements Serializable {
 
-    private Long id;
+    private String id;
 
     private String nome;
 

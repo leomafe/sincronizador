@@ -11,7 +11,7 @@ import java.util.List;
 @Setter
 public class VendaDto implements Serializable {
 
-    private Long idCliente;
+    private String idCliente;
 
     private Integer qtdItens;
 

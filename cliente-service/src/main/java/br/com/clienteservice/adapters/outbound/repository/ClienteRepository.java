@@ -1,7 +1,7 @@
 package br.com.clienteservice.adapters.outbound.repository;
 
 import br.com.clienteservice.adapters.inbound.entity.ClienteEntity;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface ClienteRepository extends JpaRepository<ClienteEntity, Long> {
+public interface ClienteRepository extends MongoRepository<ClienteEntity, String> {
 }

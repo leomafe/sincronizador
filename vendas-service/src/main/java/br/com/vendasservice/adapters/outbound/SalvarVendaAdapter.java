@@ -7,7 +7,6 @@ import br.com.vendasservice.application.ports.out.SalvarVendaPortOut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.transaction.Transactional;
 
 @Component
 
@@ -19,7 +18,6 @@ public class SalvarVendaAdapter implements SalvarVendaPortOut {
     @Autowired
     private Mapper mapper;
 
-    @Transactional
     @Override
     public Venda salvar(Venda venda) {
 

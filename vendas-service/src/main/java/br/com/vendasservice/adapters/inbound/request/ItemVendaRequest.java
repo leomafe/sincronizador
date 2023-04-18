@@ -10,9 +10,7 @@ import java.math.BigDecimal;
 @Setter
 public class ItemVendaRequest implements Serializable {
 
-    private Long id;
-
-    private Long idProduto;
+    private String idProduto;
 
     private Integer quantidade;
 

@@ -2,22 +2,20 @@ package br.com.produtoservice.adapters.inbound.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
 
-@Entity(name = "produto")
+@Document(collection = "produto")
 @Getter
 @Setter
 public class ProdutoEntity {
 
     @Id
-    @Column(name = "id", nullable = false)
-    private Long id;
+    private String id;
 
-    @Column(name = "nome", nullable = false, length = 100)
     private String nome;
 
-    @Column(name = "preco", nullable = false)
     private BigDecimal preco;
 }

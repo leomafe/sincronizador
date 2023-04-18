@@ -11,9 +11,9 @@ import java.util.List;
 @Setter
 public class VendaRequest implements Serializable {
 
-    private Long id;
+    private String id;
 
-    private Long idCliente;
+    private String idCliente;
 
     private Integer qtdItens;
 

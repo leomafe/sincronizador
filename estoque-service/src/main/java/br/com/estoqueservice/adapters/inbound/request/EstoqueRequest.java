@@ -15,7 +15,7 @@ public class EstoqueRequest implements Serializable {
 
     private Integer quantidade;
 
-    private  Long idProduto;
+    private  String idProduto;
 
     private TipoMovimentacaoEstoque tipoMovimentacaoEstoque;
 

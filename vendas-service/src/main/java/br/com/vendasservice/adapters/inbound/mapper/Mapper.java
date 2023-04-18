@@ -34,7 +34,6 @@ public class Mapper {
         List<ItemVendaDto> itemVendas =  venda.getItensVenda();
         itemVendas.forEach( itensVenda -> {
             ItemVendaEntity itemVendaEntity = new ItemVendaEntity();
-            itemVendaEntity.setVenda(entity);
             BeanUtils.copyProperties(itensVenda, itemVendaEntity);
             entity.getItensVenda().add(itemVendaEntity);
         });
